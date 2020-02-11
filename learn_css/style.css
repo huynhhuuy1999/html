@@ -1,0 +1,74 @@
+body{
+	margin: 0;
+}
+p{
+	color: orange;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.test{
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(20deg, blue , yellow);
+}
+.listt4{
+	height: 500px;
+}
+.listt1{
+	margin-top: 10px;
+	height: 200px;
+	background-image: url('img/27606173.jpg');
+	background-size: 20%;
+}
+.listt2{
+	margin-top: 10px;
+	height: 200px;
+	background-image: url('img/215878.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.listt3{
+	
+}
+.list1 .item1 > .item{
+	color: blue;
+}
+.container{
+	background-color: #AAA;
+	height: 250px;
+	width: 500px;
+	display: flex;
+	flex-direction: row;
+	/*canh lề giữa và chia đều khoảng cách*/
+	/*justify-content: space-evenly; */
+	/*canh lề giữa và khoảng cách giữa gấp đôi khoảng cách lề*/
+	/*justify-content: space-around;*/
+	/*canh giữa và không có khoảng cách lề*/
+	/*justify-content: space-between;*/
+	/*canh giữa và không có khoảng cách giữa*/
+	justify-content: center;
+	align-items:flex-end; 
+}
+.container2{
+	display: flex;
+	flex-direction: row;
+	background-color: #777;
+}
+.div1{
+	background-color: red;
+	flex-basis: 1px;
+	flex-grow: 2;
+}
+.div2{
+	background-color: blue;
+	/*kích thước của div2*/
+	flex-basis: 1px;
+	/*chia cột chiếm khoảng trống còn lại*/
+	flex-grow: 3;
+}
+.div3{
+	background-color: green;
+	flex-basis: 1px;
+	flex-grow: 7;
+}

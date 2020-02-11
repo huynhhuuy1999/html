@@ -1,0 +1,383 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.list-music{
+	width: 210px;
+	height: 210px;
+	margin: 20px;
+	transition: transform 0.5s;
+}
+.image{
+	width: 190px;
+	height: 190px;
+	background-image: url(img/Em_của_ngày_hôm_qua.png);
+	background-position: center;
+	background-size: cover;
+}
+.overlay{
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.list-music:hover{
+	transform: translate(0,-10px);
+}
+.image:hover .overlay{
+	opacity: 1;
+}
+.fa-play-circle{
+	color: #FFF;
+	font-size: 45px;
+} 
+.list-music .name-music span{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: capitalize;
+	font-family: sans-serif, Arial;
+}
+/*-------------------------*/
+.test-scale{
+	width: 210px;
+	height: 210px;
+	margin: 20px;
+}
+
+.img{
+	height: 190px;
+	width: 190px;
+	position: relative;
+	overflow: hidden;
+}
+.img img{
+	width: 100%;
+	transition: transform 0.5s;
+}
+.cover{
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img:hover .cover{
+	opacity: 1;
+}
+.img:hover img{
+	transform: scale(1.1);
+}
+/*---------------------------------*/
+.list-menu{
+	list-style: none;
+	width: 300px;
+	font-family: sans-serif;
+	text-transform: capitalize;
+}
+.list-menu li{
+	background-color: #3045bb;
+	height: 65px;
+}
+.list-menu li:hover{
+	background-color: #888;
+}
+.chart-menu{
+	display: flex;
+	height: 100%;
+}
+.chart-menu .number {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+.image-menu{
+	width:50px;
+	padding: 7px;
+	position: relative;
+}
+.image-menu a{
+	width: 100%;
+	position: absolute;
+}
+.image-menu a img{
+	width: 50px;
+}
+.image-menu .cover{
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.8);
+	/*opacity: 0;*/
+}
+.content-menu{
+	display: flex;
+	flex-grow: 1;
+}
+.detail{
+	padding-left: 10px;
+	width: 100%;
+	padding-top: 6px;
+}
+.detail .name-song{
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFF;
+}
+.detail .singer{
+	font-size: 12px;
+	color: #AAA;
+}
+.chart-menu .percent-listen{
+	display: flex;
+	align-items: center;
+	padding-right: 5px;
+}
+/*------------------------*/
+.theme{
+	height: 150px;
+	width: 300px;
+	background-image: url(img/necrotizing-enterocolitis-society_processed_f126088dc032a3693395991c883552ce65ed7e40235b8ab7b202338299c25e5f_background_image.jpg);
+	display: flex;
+	background-position: center;
+	background-size: cover;
+}
+.img-theme{
+	display: flex;
+	flex-basis: 130px;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+}
+.img-theme img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+.content-theme{
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 170px;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: 600;
+	color: #555;
+}
+/*-------------------------------*/
+.poster-theme{
+	width: 260px;
+	height: 65px;
+	overflow: hidden;
+}
+.poster-theme:hover img{
+	transform: scale(1.1);
+}
+.poster-theme img{
+	width: 100%;
+	transition: transform 0.5s;
+}
+/*----------------------------------*/
+.released-item{
+	display: flex;
+	width: 350px;
+	height:150px;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+.img-released{
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	position: relative;
+}
+.img-released img{
+	width: 100%;
+	transition: transform 0.5s;
+}
+.img-released .cover1{
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fa-play{
+	font-size: 30px;
+	color: #FFF;
+}
+.img-released:hover img{
+	transform: scale(1.1);
+}
+.img-released:hover .cover1{
+	opacity: 1;
+}
+.content-released{
+	margin-left: 5px;
+}
+.content-released .name-released{
+	font-size: 18px;
+	font-weight: bold;
+}
+.content-released .name-singer-released{
+	font-size: 12px;
+	color: #555;
+}
+.content-released .number-released{
+	font-size: 25px;
+	text-shadow: 1px 1px 1px #555;
+}
+/*------------------------------------*/
+.category{
+	height: 107px;
+	width: 190px;
+	overflow: hidden;
+	position: relative;
+}
+.category img{
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+}
+.category:hover img{
+	transform: scale(1.1);
+}
+.category:hover span{
+	transform: translate(0,-10px);
+}
+.category span{
+	position: relative;
+	top: -50px;
+	display: flex;
+	justify-content: center;
+	font-size: 25px;
+	font-weight: bold;
+	color: #FFF;
+	transition: transform 0.5s;
+	z-index: 1;
+}
+.category .cover2{
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(0deg, rgba(3,0,36,0.9895308465182948) 0%, rgba(30,30,33,1) 36%, rgba(64,71,73,0.4096989137451855) 100%, rgba(3,81,97,0.7948717948717949) 100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*----------------------------------*/
+.mv{
+	width: 600px;
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+}
+.mv img{
+	width: 100%;
+	transition: transform 0.5s;
+}
+.mv:hover img{
+	transform: scale(1.1);
+}
+.mv .cover3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: opacity 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mv:hover .cover3{
+	opacity: 1;
+}
+.cover3 .fa-play-circle{
+	font-size: 70px;
+}
+.mv p{
+	position: relative;
+	color: #FFF;
+	top: -115px;
+	z-index: 99;
+	padding: 10px;
+	text-transform: capitalize;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+.mv:hover  p{
+	opacity: 0;
+}
+/*-------------------------------*/
+.item-mv{
+	width: 190px;
+}
+.img-mv{
+	width: 190px;
+	height: 107px;
+	position: relative;
+	overflow: hidden;
+}
+.img-mv img{
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+}
+.img-mv .cover4{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 0.5s;
+}
+.content-item-mv{
+	width: 190px;
+	height: 39px;
+	margin-top: 5px;
+}
+.content-item-mv{
+	font-family: sans-serif;
+	text-transform: capitalize;
+}
+.content-item-mv:hover{
+	color: purple;
+}
+.content-item-mv .name-item-mv{
+	font-size: 14px;
+	font-weight: 600;
+}
+.content-item-mv .name-singer-mv{
+	font-size: 12px;
+	color: #777;
+}
+.item-mv:hover .cover4{
+	opacity: 1;
+}
+.item-mv:hover img{
+	transform: scale(1.1);
+}

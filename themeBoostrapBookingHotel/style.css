@@ -1,0 +1,412 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.row{
+	padding: 0;
+	margin: 0;
+}
+.row li{
+	list-style-type: none;
+}
+.option{
+	justify-content: space-evenly;
+	height: 100%;
+	box-sizing: border-box;
+}
+.option li{
+	display: flex;
+	align-items: center;
+	height:100%;
+	padding: 5px;
+}
+.option li a{
+	list-style-type: none;
+	color: #BBB;
+	font-family: sans-serif;
+	font-weight: 100;
+	text-decoration: none;
+	font-size: 13px;
+}
+.avata{
+	background-color: #c19b77;
+	color: #000;
+}
+.avata a{
+	color: #FFF;
+}
+.task-bar{
+	background-color: #222;
+}
+.col-md-5 p{
+	text-align: center;
+	float: left;
+	color: #EEE;
+}
+.menu{
+	justify-content: space-evenly;
+	padding-top: 18px;
+}
+.menu li a{
+	list-style-type: none;
+	margin: 7px;
+	color: #FFF;
+	font-family: sans-serif;
+	font-weight: 100;
+	text-decoration: none;
+}
+.background {
+	background-image: url(img/singapore_casino_hotel_59558_1920x1080.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 750px;
+}
+.item{
+	text-align: center;
+	position: relative;
+	color: #FFF;
+}
+.item1{
+	top: 100px;
+	font-family: sans-serif;
+}
+.item2{
+	width: 100px;
+}
+.item3{
+	font-size: 60px;
+	top: 150px;
+	font-family: serif;
+}
+.rooms-suite{
+	position: relative;
+	top: 150px;
+	justify-content: center;
+}
+.item4{
+	font-size: 20px;
+	border: 2px solid #FFF;
+	width: 200px;
+}
+.list-time{
+	position: relative;
+	top: 320px;
+	justify-content: center;
+}
+.time{
+	background-color: #FFF;
+	width: 800px;
+	height: 100px;
+	align-items: center;
+}
+.time span{
+	color: #000;
+	font-size: 30px;
+}
+.time p{
+	color: #AAA;
+}
+.time .x{
+	text-transform: uppercase;
+	font-family: serif;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+}
+.x p{
+	color: #FFF;
+}
+.relax{
+	text-align: center;
+}
+.relax img{
+	width: 500px;
+	display: flex;
+	justify-content: center;
+}
+.relax .bayview{
+	font-family: sans-serif;
+	color: #888;
+}
+.resort{
+	font-size: 80px;
+	color: #000;
+	font-family: serif;
+}
+.content-vivamus{
+	color: #BBB;
+}
+.btn-about button{
+	border: none;
+	background-color: #c19b76;
+	padding: 10px;
+}
+.btn-about button a{
+	font-family: sans-serif;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.header-best-room{
+	color: #BBB;
+	text-align: center;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+.best-room{
+	text-align: center;
+	font-size: 50px;
+	color: #333;
+	font-family: serif;
+}
+.view-room img{
+	width: 100%;
+}
+.content-view-room h3{
+	font-family: serif;
+	font-size: 30px;
+}
+.size{
+	color: #BBB;
+	font-size: 15px;
+}
+.content-view-room p{
+	color: #BBB;
+	font-size: 15px;
+}
+.content-view-room button{
+	padding: 10px;
+	background-color: #000;
+	border: none;
+}
+.content-view-room a{
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+}
+.img-top img{
+	width: 100%;
+}
+.img-bottom img{
+	width: 100%;
+}
+.bgr-left{
+	background-color: #222;
+}
+.bgr-left .container{
+	display: flex;
+	justify-content: center;
+}
+.content-discover{
+	/*width: 500px;
+	height: 500px;*/
+}
+.content-discover p{
+	color: #FFF;
+	font-family: sans-serif;
+}
+.content-discover h2{
+	font-family: serif;
+	font-size: 80px;
+}
+.content-discover + h2{
+	color: #FFF;
+}
+.our{
+	color: #FFF;
+}
+.location{
+	color: #c19b76;
+}
+.text{
+	color:#555;
+}
+.content-discover button{
+	border: none;
+	padding: 10px;
+	background-color: #000;
+}
+.content-discover button a{
+	color: #FFF;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 15px;
+}
+.content-discover .col-md-6{
+	padding: 0;
+	margin: 0;
+}
+.col-md-6s{
+	flex-grow: 1;
+}
+.enim{
+	font-size: 25px;
+	text-align: center;
+	font-weight: normal;
+	line-height: 45px;
+	margin: 25px 100px;
+	font-family: 'Gilda Display', 'Roboto';
+}
+.content-restaurant{
+	text-align: center;
+}
+.content-restaurant span{
+	color: #555;
+	font-weight: 300;
+	font-family: sans-serif;
+}
+.content-restaurant h2{
+	font-family: serif;
+	font-size: 35px;
+	margin-top: 15px;
+}
+.content-restaurant p{
+	color: #BBB;
+}
+.content-restaurant button{
+	border: 2px solid #c19b76;
+	padding: 5px 15px;
+}
+.content-restaurant a{
+	text-decoration: none;
+	color: #c19b76;
+	font-weight: bold;
+}
+.restaurant-receipt img{
+	width: 100%;
+}
+.restaurant-receipt .col-md-6{
+	padding: 0;
+	margin: 0;
+}
+.relax-enjoy{
+	background-image: url('https://picsum.photos/1920/1080');
+	height: 500px;
+	justify-content: center;
+}
+.content-enjoy{
+	text-align: center;
+	color: #FFF;
+	align-items: center;
+}
+.holiday{
+	font-family: serif;
+	font-size: 80px;
+	line-height: 90px;
+}
+.luxury{
+	font-size: 24px;
+	font-family: sans-serif;
+}
+.head-our-blog{
+	text-align: center;
+}
+.head-our-blog span{
+	color: #BBB;
+	font-size: 15px;
+}
+.head-our-blog p{
+	font-size: 80px;
+	font-family: serif;
+}
+.column1 img{
+	width: 100%;
+}
+.content-website{
+	background-color: #FFF;
+}
+.content-website span{
+	color: #333;
+	font-size: 15px;
+}
+.content-website .new{
+	font-size: 35px;
+	font-family: serif;
+}
+.content-website .phase{
+	font-size: 12px;
+}
+.content-website button{
+	padding: 10px 20px;
+	border: 2px solid #c19b76;
+	background-color: #FFF;
+}
+.content-website button a{
+	text-decoration: none;
+	color: #c19b76;
+	font-weight: bold;
+}
+.column1 .check{
+	width: 100%;
+	height: 120px;
+	justify-content: center;
+	background-color: #222;
+}
+.check a{
+	color: #FFF;
+	font-size: 30px;
+	font-family: serif;
+	text-decoration: none;
+}
+.follow{
+	height: 220px;
+	background-color: #c19b76;
+	width: 100%;
+	justify-content: center;
+}
+.follow a{
+	text-decoration: none;
+	color: #FFF;
+	font-family: serif;
+	font-size: 28px;
+}
+.blog2 img{
+	width: 100%;
+}
+.column3 img{
+	width: 100%;
+}
+.phone-support .phone{
+	color: #FFF;
+	font-size: 28px;
+	font-family: serif;
+}
+.phone-support span{
+	color: #BBB;
+}
+.offer{
+	color: #BBB;
+	font-size: 14px;
+}
+.letter{
+	font-size: 28px;
+	font-family: serif;
+}
+.form{
+	height: 40px;
+	box-sizing: border-box;
+}
+.subcribe{
+	background-color: #c19b76;
+	padding: 10px 15px;
+	border: none;
+}
+.subcribe a{
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+input{
+	height: 100%;
+	background-color: #000;
+	border: none;
+	color: #FFF;
+}
+.footer{
+	background-color: #222;
+}

@@ -1,0 +1,35 @@
+.features {
+  background-color: $mainbg;
+  .feature-grid {
+    margin: 0 auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:6vw 10vw;
+    @include breakpoint(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(large) {
+        gap: 6vw 7vw;
+      }
+  }
+  .feature {
+    // min-height: 150px;
+    text-align: center;
+    &-img {
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      align-items: center;
+    }
+    &-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    &-description {
+      font-size: 1rem;
+    }
+  }
+}

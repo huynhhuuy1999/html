@@ -1,0 +1,52 @@
+.productive{
+    background-color: $mainbg;
+    
+    grid-template-columns: 1fr;
+    // padding:2rem 2rem;
+    &-grid{
+        display: grid;
+        margin: 0 auto;
+        max-width: 600px;
+        align-items: center;
+        @include breakpoint(medium){
+            grid-template-columns: repeat(2,1fr);
+            gap:0 40px;
+            max-width: none;
+            padding: 1rem 3rem;
+        }
+    }
+    &-img{
+        text-align: center;
+        img{
+            width: 100%;
+        }
+    }
+    &-text{
+        @include breakpoint(large){
+            padding-right: 4rem;
+        }
+        h2{
+            @include breakpoint(large){
+                max-width: 400px;
+            }
+            font-size: 1.25em;
+        }
+        p{
+            font-size: 1rem;
+        }
+        a{
+            background-image: url('../images/icon-arrow.svg');
+            background-position: right center;
+            background-repeat: no-repeat;
+            padding-right: 25px;
+            color: $cyan;
+            border-bottom: 1px solid $cyan;
+            transition: color 0.25s;
+            &:hover{
+                color:#FFF;
+                text-decoration: none;
+                border-bottom: 1px solid #FFF;
+            }
+        }
+    }
+}

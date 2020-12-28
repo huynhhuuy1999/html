@@ -1,0 +1,61 @@
+.footer{
+    background-color: $footerbg;
+    padding-bottom: 20px;
+    span{
+        display: block;
+    }
+    &-grid{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 1fr;
+        align-items: start;
+        gap: 1rem 0;
+        @include breakpoint(large){
+            grid-template-columns: 3fr 2fr 1.5fr 1fr 2fr;
+            grid-template-rows: 60px 1fr;
+            gap: 1rem 2rem;
+            padding: 0 5rem;
+        }
+    }
+    &-img{
+        @include breakpoint(large){
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        
+    }
+    &-address{
+        font-size: 1rem;
+    }
+    &-contact{
+        line-height: 2;
+    }
+    &-about{
+        line-height: 2;
+    }
+    &-us{
+        line-height: 2;
+    }
+    &-social-network{
+       text-align: center;
+    }
+    a{
+        display: block;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    span{
+        font-size: 1rem;
+        i{
+            margin-left: 2px;
+        }
+    }
+    .icon{
+        display: inline;
+        margin-right: 15px;
+        i{
+            cursor: pointer;
+        }
+    }
+}

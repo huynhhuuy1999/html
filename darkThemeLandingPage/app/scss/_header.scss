@@ -1,0 +1,25 @@
+header{
+    display: grid;
+    grid-template-columns: minmax(100px,1fr) repeat(3,auto);
+    background-color: $emailbg;
+    column-gap: 2rem;
+    
+    align-items: center;
+    font-family: $font-body;
+    padding:1rem 0.8rem;
+    img{
+        width: 83px;
+        @include breakpoint(large){
+            width: 185px;
+        }
+    }
+    a{
+        font-size: 0.875rem;
+        @include breakpoint(large){
+            font-size: 1rem;
+        }
+    }
+    @include breakpoint(large){
+        padding: 1.1rem 2rem;
+    }
+}
